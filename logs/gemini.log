@@ -1,0 +1,253 @@
+[2026-08-06 04:43:02] Embedding Success | Dimension=3072
+[2026-08-06 04:43:02] Embedding Success | Dimension=3072
+[2026-08-06 04:43:02] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:03] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:04] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:05] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:06] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:07] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:08] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:09] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:10] Embedding Success | Dimension=3072
+[2026-08-06 04:43:11] Embedding Success | Dimension=3072
+[2026-08-06 05:03:19] Embedding Success | Dimension=3072
+[2026-08-06 05:03:24] Generation Success
+[2026-08-06 05:03:24] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:24] ```json
+{
+    "answer": "Pierre Fakevid PsueBetta, born on November 7, 1967, is a French DJ and record producer. He has sold over 10 million albums and 65 million singles globally, accumulating more than 30 billion streams on Spotify. PsueBetta has been voted the number one DJ in the DJ Mag Top 100 DJs polls in 2011, 2020, 2021, 2023, and 2025. His accolades include two Grammy Awards, an American Music Award, six Electronic Dance Music Awards, and a Billboard Music Award. He achieved mainstream success with his fourth album, \"One Love\" (2009), and released the single \"I'm Good (Blue)\" with Bebe Rexha. In June 2021, he sold his recorded music.",
+    "citations": [
+        "Source 1",
+        "Source 3",
+        "Source 2",
+        "Source 4",
+        "Source 5"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:26] Embedding Success | Dimension=3072
+[2026-08-06 05:03:28] Generation Success
+[2026-08-06 05:03:28] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:28] ```json
+{
+    "answer": "Elena Ashford was born on April 18, 1987. [Source 1, Source 3]",
+    "citations": [
+        "Source 1",
+        "Source 3"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:30] Embedding Success | Dimension=3072
+[2026-08-06 05:03:32] Generation Success
+[2026-08-06 05:03:32] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:32] ```json
+{
+    "answer": "Elena Ashford was born in the fictional town of Raven's Hollow, Oregon.",
+    "citations": [
+        "Source 1"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:34] Embedding Success | Dimension=3072
+[2026-08-06 05:03:35] Generation Success
+[2026-08-06 05:03:35] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:35] ```json
+{
+    "answer": "She attended the fictional Westbridge Institute of Technology (WIT).",
+    "citations": [
+        "Source 1",
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:37] Embedding Success | Dimension=3072
+[2026-08-06 05:03:39] Generation Success
+[2026-08-06 05:03:39] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:39] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:41] Embedding Success | Dimension=3072
+[2026-08-06 05:03:42] Generation Success
+[2026-08-06 05:03:42] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:42] ```json
+{
+    "answer": "The primary software architecture behind ARIN consisted of four layers: Sensor Collection Layer, Edge Processing Layer, Regional Aggregation Layer, and Central Prediction.",
+    "citations": [
+        "Source 1"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:45] Embedding Success | Dimension=3072
+[2026-08-06 05:03:46] Generation Success
+[2026-08-06 05:03:46] Safety Ratings Candidate 0: None
+[2026-08-06 05:03:46] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:03:48] Embedding Success | Dimension=3072
+[2026-08-06 05:03:50] Embedding Success | Dimension=3072
+[2026-08-06 05:03:53] Embedding Success | Dimension=3072
+[2026-08-06 05:12:21] Embedding Success | Dimension=3072
+[2026-08-06 05:12:23] Generation Success
+[2026-08-06 05:12:23] Safety Ratings Candidate 0: None
+[2026-08-06 05:12:23] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:12:25] Embedding Success | Dimension=3072
+[2026-08-06 05:12:27] Generation Success
+[2026-08-06 05:12:27] Safety Ratings Candidate 0: None
+[2026-08-06 05:12:27] ```json
+{
+    "answer": "The publication that introduced adaptive federated learning techniques was \"Federated Environmental Intelligence Using Distributed Sensor Meshes,\" published in the fictional Journal of Sustainable Computing in 2019. [Source 1, Source 2]",
+    "citations": [
+        "Source 1",
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:12:29] Embedding Success | Dimension=3072
+[2026-08-06 05:12:38] Generation Success
+[2026-08-06 05:12:38] Safety Ratings Candidate 0: None
+[2026-08-06 05:12:38] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:12:40] Embedding Success | Dimension=3072
+[2026-08-06 05:12:41] Generation Success
+[2026-08-06 05:12:41] Safety Ratings Candidate 0: None
+[2026-08-06 05:12:41] ```json
+{
+    "answer": "ARIN integrated data from more than 18,500 environmental sensors. [Source 1, Source 4]",
+    "citations": [
+        "Source 1",
+        "Source 4"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:12:43] Embedding Success | Dimension=3072
+[2026-08-06 05:12:45] Generation Success
+[2026-08-06 05:12:45] Safety Ratings Candidate 0: None
+[2026-08-06 05:12:45] ```json
+{
+    "answer": "ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. [Source 2]",
+    "citations": [
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:12:47] Embedding Success | Dimension=3072
+[2026-08-06 05:17:31] Embedding Success | Dimension=3072
+[2026-08-06 05:17:32] Generation Success
+[2026-08-06 05:17:32] Safety Ratings Candidate 0: None
+[2026-08-06 05:17:32] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:17:35] Embedding Success | Dimension=3072
+[2026-08-06 05:17:36] Generation Success
+[2026-08-06 05:17:36] Safety Ratings Candidate 0: None
+[2026-08-06 05:17:36] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+[2026-08-06 05:17:38] Embedding Success | Dimension=3072
+[2026-08-06 05:17:40] Embedding Success | Dimension=3072
+[2026-08-06 05:17:43] Embedding Success | Dimension=3072
+[2026-08-06 05:17:44] Generation Success
+[2026-08-06 05:17:44] Safety Ratings Candidate 0: None
+[2026-08-06 05:17:44] ```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
