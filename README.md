@@ -12,7 +12,6 @@ The project also implements several production-oriented features including:
 - Gemini embeddings
 - Retrieval-Augmented Generation (RAG)
 - Gemini Safety Guardrails
-- Prompt-response caching
 - Structured JSON output validation
 - Timestamped logging
 - Source citations
@@ -43,14 +42,6 @@ This implementation satisfies the following production RAG requirements.
 - Harmful content filtering
 - Safety ratings returned from Gemini
 
-## Caching
-
-- Prompt-response cache
-- Stores the most recent 10 prompts
-- Tracks cache hits
-- Automatically evicts the least-used prompt
-- Timestamped cache logs
-
 ## Validation
 
 All responses are validated using Pydantic before being returned.
@@ -60,10 +51,6 @@ All responses are validated using Pydantic before being returned.
 Timestamped logs are generated for
 
 - Embedding requests
-- LLM requests
-- Cache hits
-- Cache misses
-- Cache eviction
 - Gemini safety information
 - API failures
 
@@ -98,13 +85,7 @@ Timestamped logs are generated for
         User Question
              │
              ▼
-       Prompt Cache
-        │        │
-        │        │
-   Cache Hit   Cache Miss
-        │        │
-        ▼        ▼
- Return Answer  Gemini Embedding
+       Gemini Embedding
                     │
                     ▼
               FAISS Search
@@ -147,23 +128,17 @@ project/
 │     ├── index.faiss
 │     └── metadata.json
 │
-├── cache/
-│     └── prompt_cache.json
 │
 ├── logs/
 │     ├── gemini.log
 │     └── prompt_cache.log
 │
 ├── chunker.py
-├── embeddings.py
+├── bedrock_llm.py
 ├── ingest.py
 ├── index_utils.py
-├── prompt_cache.py
-├── validator.py
 ├── requirements.txt
 └── README.md
-```
-
 ---
 
 # Requirements
@@ -265,7 +240,8 @@ Run
 python index_utils.py
 ```
 
-The application prompts for a question
+The application prompts for a question or you can enter question as second argument. Other option is using the run_questions.sh
+shell script and provide a text file of questions (one on each line) as input, and it will go through all the questions one by one.
 
 ```
 Question:
@@ -275,16 +251,14 @@ Who founded Blue Horizon Analytics?
 
 The pipeline then
 
-1. Checks the prompt cache
-2. Generates a Gemini embedding
+1. Generates a Gemini embedding
 3. Searches FAISS
 4. Retrieves the Top-K chunks
 5. Builds a grounded prompt
 6. Sends the prompt through Gemini Safety
 7. Generates an answer
 8. Validates the JSON response
-9. Stores the result in the prompt cache
-10. Returns the answer
+9. Returns the answer
 
 ---
 
@@ -417,25 +391,12 @@ Responsible for
 # Example Workflow
 
 1. User asks a question.
-2. The prompt cache is checked.
-3. If the prompt is cached, the stored response is returned.
-4. Otherwise, the question is embedded using Gemini.
+2. The question is embedded using Gemini.
 5. FAISS retrieves the Top-K matching chunks.
 6. A grounded prompt is created.
 7. Gemini generates a response using Safety Settings.
 8. The response is validated using Pydantic.
-9. The response is cached.
-10. The final answer and citations are displayed.
-
----
-
-# Performance
-
-Using FAISS significantly improves retrieval performance compared to manually computing cosine similarity across every embedding.
-
-Prompt caching further reduces latency by avoiding repeated Gemini API requests for frequently asked questions.
-
-Logging and structured validation provide observability and improve system reliability.
+9. The final answer and citations are displayed.
 
 ---
 
@@ -466,7 +427,6 @@ Possible causes
 - Empty corpus
 - Incorrect chunk size
 - Incorrect overlap
-- Index not rebuilt after adding documents
 
 ---
 
