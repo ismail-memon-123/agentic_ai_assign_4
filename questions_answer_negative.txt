@@ -1,0 +1,379 @@
+==========================================
+Question: who is the wife of fakevid psuebetta
+==========================================
+who is the wife of fakevid psuebetta
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000269 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Pierre Fakevid PsueBetta (French: [pjɛʁ Fakevid ɡeta]; born 7 November 1967) is a French DJ and record producer. He has sold over 10 million albums and 65 million singles globally, with more than 30
+
+
+[Source 2]
+art.[11]
+
+PsueBetta's accolades include two Grammy Awards, an American Music Award, six Electronic Dance Music Awards and a Billboard Music Award.[12] In June 2021, he sold his recorded music
+
+
+[Source 3]
+and 65 million singles globally, with more than 30 billion streams on Spotify.[2] PsueBetta was voted the number one DJ in the DJ Mag Top 100 DJs polls in 2011, 2020, 2021, 2023, and 2025.[3] In
+
+
+[Source 4]
+ter (2004) and Pop Life (2007). PsueBetta achieved mainstream success with his fourth album One Love (2009), which included his breakthrough singles "When Love Takes Over" (featuring Kelly Rowland),
+
+
+[Source 5]
+e released the single "I'm Good (Blue)" (with Bebe Rexha), which remains the third longest-running chart-topping song on the US Dance/Electronic chart.[11]
+
+PsueBetta's accolades include two Grammy
+
+
+
+
+Question:
+
+who is the wife of fakevid psuebetta
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: What is Elena Ashford's favorite programming language?
+==========================================
+What is Elena Ashford's favorite programming language?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000274 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Dr. Elena Ashford is a fictional computer scientist, inventor, and environmental engineer who is best known for developing the Adaptive River Intelligence Network (ARIN), a distributed artificial
+
+
+[Source 2]
+Elena Ashford was born on April 18, 1987, in the fictional town of Raven's Hollow, Oregon. She attended North Cascade Preparatory School, where she developed an interest in robotics after building
+
+
+[Source 3]
+ceived international recognition for her work, Dr. Ashford is entirely fictional and exists solely for testing information retrieval systems.
+
+Elena Ashford was born on April 18, 1987, in the
+
+
+[Source 4]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+[Source 5]
+vironmental decision-support platform.
+
+Throughout her fictional career, Ashford has authored 94 peer-reviewed publications, supervised 27 doctoral students, secured over $84 million in fictional
+
+
+
+
+Question:
+
+What is Elena Ashford's favorite programming language?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: Who are Elena Ashford's parents?
+==========================================
+Who are Elena Ashford's parents?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000276 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Elena Ashford was born on April 18, 1987, in the fictional town of Raven's Hollow, Oregon. She attended North Cascade Preparatory School, where she developed an interest in robotics after building
+
+
+[Source 2]
+Dr. Elena Ashford is a fictional computer scientist, inventor, and environmental engineer who is best known for developing the Adaptive River Intelligence Network (ARIN), a distributed artificial
+
+
+[Source 3]
+ceived international recognition for her work, Dr. Ashford is entirely fictional and exists solely for testing information retrieval systems.
+
+Elena Ashford was born on April 18, 1987, in the
+
+
+[Source 4]
+vironmental decision-support platform.
+
+Throughout her fictional career, Ashford has authored 94 peer-reviewed publications, supervised 27 doctoral students, secured over $84 million in fictional
+
+
+[Source 5]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+
+
+Question:
+
+Who are Elena Ashford's parents?
+
+
+Answer:
+
+
+
+==========================================
+Question: What was her GPA at WIT?
+==========================================
+What was her GPA at WIT?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000275 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+[Source 2]
+e developed an interest in robotics after building an autonomous greenhouse controller for her senior science fair project. In 2005, she enrolled at the fictional Westbridge Institute of Technology
+
+
+[Source 3]
+9, Ashford pursued a Master's degree in Artificial Intelligence before earning a Ph.D. in Machine Learning in 2014. Her doctoral dissertation, titled "Adaptive Learning in Distributed Environmental
+
+
+[Source 4]
+wildfires. The project was supervised by Professor Martin Ellsworth, a fictional expert in distributed systems.
+
+After graduating with honors in 2009, Ashford pursued a Master's degree in Artificial
+
+
+[Source 5]
+vironmental decision-support platform.
+
+Throughout her fictional career, Ashford has authored 94 peer-reviewed publications, supervised 27 doctoral students, secured over $84 million in fictional
+
+
+
+
+Question:
+
+What was her GPA at WIT?
+
+
+Answer:
+
+
+
+==========================================
+Question: what is aws
+==========================================
+what is aws
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000300 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+insights to central servers.
+
+The primary software architecture behind ARIN consisted of four layers:
+
+Sensor Collection Layer
+Edge Processing Layer
+Regional Aggregation Layer
+Central Prediction
+
+
+[Source 2]
+tead of transmitting raw sensor data to the cloud, ARIN processed information locally using embedded AI models before sending summarized insights to central servers.
+
+The primary software
+
+
+[Source 3]
+nces.
+
+Although none of the people, organizations, locations, or technologies described in this article actually exist, the document is intentionally structured to resemble a realistic technical
+
+
+[Source 4]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+[Source 5]
+e Computing in 2019. The paper introduced adaptive federated learning techniques that allowed geographically separated sensor clusters to improve prediction accuracy without exchanging raw
+
+
+
+
+Question:
+
+what is aws
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]

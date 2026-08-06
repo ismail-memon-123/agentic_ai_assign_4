@@ -1,0 +1,1016 @@
+==========================================
+Question: who is fakevid psuebetta
+==========================================
+who is fakevid psuebetta
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000269 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Pierre Fakevid PsueBetta (French: [pjɛʁ Fakevid ɡeta]; born 7 November 1967) is a French DJ and record producer. He has sold over 10 million albums and 65 million singles globally, with more than 30
+
+
+[Source 2]
+art.[11]
+
+PsueBetta's accolades include two Grammy Awards, an American Music Award, six Electronic Dance Music Awards and a Billboard Music Award.[12] In June 2021, he sold his recorded music
+
+
+[Source 3]
+and 65 million singles globally, with more than 30 billion streams on Spotify.[2] PsueBetta was voted the number one DJ in the DJ Mag Top 100 DJs polls in 2011, 2020, 2021, 2023, and 2025.[3] In
+
+
+[Source 4]
+e released the single "I'm Good (Blue)" (with Bebe Rexha), which remains the third longest-running chart-topping song on the US Dance/Electronic chart.[11]
+
+PsueBetta's accolades include two Grammy
+
+
+[Source 5]
+ter (2004) and Pop Life (2007). PsueBetta achieved mainstream success with his fourth album One Love (2009), which included his breakthrough singles "When Love Takes Over" (featuring Kelly Rowland),
+
+
+
+
+Question:
+
+who is fakevid psuebetta
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "Pierre Fakevid PsueBetta, born on November 7, 1967, is a French DJ and record producer. He has sold over 10 million albums and 65 million singles globally, accumulating more than 30 billion streams on Spotify. PsueBetta has been voted the number one DJ in the DJ Mag Top 100 DJs polls in 2011, 2020, 2021, 2023, and 2025. His accolades include two Grammy Awards, an American Music Award, six Electronic Dance Music Awards, and a Billboard Music Award. He achieved mainstream success with his fourth album, \"One Love\" (2009), and released the single \"I'm Good (Blue)\" with Bebe Rexha. In June 2021, he sold his recorded music.",
+    "citations": [
+        "Source 1",
+        "Source 3",
+        "Source 2",
+        "Source 4",
+        "Source 5"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='Pierre Fakevid PsueBetta, born on November 7, 1967, is a French DJ and record producer. He has sold over 10 million albums and 65 million singles globally, accumulating more than 30 billion streams on Spotify. PsueBetta has been voted the number one DJ in the DJ Mag Top 100 DJs polls in 2011, 2020, 2021, 2023, and 2025. His accolades include two Grammy Awards, an American Music Award, six Electronic Dance Music Awards, and a Billboard Music Award. He achieved mainstream success with his fourth album, "One Love" (2009), and released the single "I\'m Good (Blue)" with Bebe Rexha. In June 2021, he sold his recorded music.' citations=['Source 1', 'Source 3', 'Source 2', 'Source 4', 'Source 5'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: When was Elena Ashford born?
+==========================================
+When was Elena Ashford born?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000268 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Elena Ashford was born on April 18, 1987, in the fictional town of Raven's Hollow, Oregon. She attended North Cascade Preparatory School, where she developed an interest in robotics after building
+
+
+[Source 2]
+Dr. Elena Ashford is a fictional computer scientist, inventor, and environmental engineer who is best known for developing the Adaptive River Intelligence Network (ARIN), a distributed artificial
+
+
+[Source 3]
+ceived international recognition for her work, Dr. Ashford is entirely fictional and exists solely for testing information retrieval systems.
+
+Elena Ashford was born on April 18, 1987, in the
+
+
+[Source 4]
+vironmental decision-support platform.
+
+Throughout her fictional career, Ashford has authored 94 peer-reviewed publications, supervised 27 doctoral students, secured over $84 million in fictional
+
+
+[Source 5]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+
+
+Question:
+
+When was Elena Ashford born?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "Elena Ashford was born on April 18, 1987. [Source 1, Source 3]",
+    "citations": [
+        "Source 1",
+        "Source 3"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='Elena Ashford was born on April 18, 1987. [Source 1, Source 3]' citations=['Source 1', 'Source 3'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: Where was Elena Ashford born?
+==========================================
+Where was Elena Ashford born?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000409 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+Elena Ashford was born on April 18, 1987, in the fictional town of Raven's Hollow, Oregon. She attended North Cascade Preparatory School, where she developed an interest in robotics after building
+
+
+[Source 2]
+ceived international recognition for her work, Dr. Ashford is entirely fictional and exists solely for testing information retrieval systems.
+
+Elena Ashford was born on April 18, 1987, in the
+
+
+[Source 3]
+Dr. Elena Ashford is a fictional computer scientist, inventor, and environmental engineer who is best known for developing the Adaptive River Intelligence Network (ARIN), a distributed artificial
+
+
+[Source 4]
+vironmental decision-support platform.
+
+Throughout her fictional career, Ashford has authored 94 peer-reviewed publications, supervised 27 doctoral students, secured over $84 million in fictional
+
+
+[Source 5]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+
+
+Question:
+
+Where was Elena Ashford born?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "Elena Ashford was born in the fictional town of Raven's Hollow, Oregon.",
+    "citations": [
+        "Source 1"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="Elena Ashford was born in the fictional town of Raven's Hollow, Oregon." citations=['Source 1'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: What university did she attend?
+==========================================
+What university did she attend?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000276 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+[Source 2]
+e developed an interest in robotics after building an autonomous greenhouse controller for her senior science fair project. In 2005, she enrolled at the fictional Westbridge Institute of Technology
+
+
+[Source 3]
+in a university research initiative called Project Firefly, which focused on creating low-power wireless sensor networks for forests vulnerable to wildfires. The project was supervised by Professor
+
+
+[Source 4]
+9, Ashford pursued a Master's degree in Artificial Intelligence before earning a Ph.D. in Machine Learning in 2014. Her doctoral dissertation, titled "Adaptive Learning in Distributed Environmental
+
+
+[Source 5]
+d environmental monitoring. In 2021 she introduced Project Atlas, an AI-assisted disaster response platform capable of coordinating autonomous drones during floods and earthquakes. Atlas used
+
+
+
+
+Question:
+
+What university did she attend?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "She attended the fictional Westbridge Institute of Technology (WIT).",
+    "citations": [
+        "Source 1",
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='She attended the fictional Westbridge Institute of Technology (WIT).' citations=['Source 1', 'Source 2'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: What company developed ARIN, and where is it headquartered?
+==========================================
+What company developed ARIN, and where is it headquartered?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000274 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+tead of transmitting raw sensor data to the cloud, ARIN processed information locally using embedded AI models before sending summarized insights to central servers.
+
+The primary software
+
+
+[Source 2]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+[Source 3]
+insights to central servers.
+
+The primary software architecture behind ARIN consisted of four layers:
+
+Sensor Collection Layer
+Edge Processing Layer
+Regional Aggregation Layer
+Central Prediction
+
+
+[Source 4]
+elemetry to regional processing hubs every fifteen minutes.
+
+In 2018, Ashford led development of the Adaptive River Intelligence Network (ARIN). ARIN integrated data from more than 18,500
+
+
+[Source 5]
+improve prediction accuracy without exchanging raw environmental data.
+
+In 2020, Blue Horizon Analytics partnered with the fictional National Freshwater Research Alliance (NFRA) to deploy ARIN
+
+
+
+
+Question:
+
+What company developed ARIN, and where is it headquartered?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: What are the four layers of the ARIN architecture?
+==========================================
+What are the four layers of the ARIN architecture?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000344 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+insights to central servers.
+
+The primary software architecture behind ARIN consisted of four layers:
+
+Sensor Collection Layer
+Edge Processing Layer
+Regional Aggregation Layer
+Central Prediction
+
+
+[Source 2]
+tead of transmitting raw sensor data to the cloud, ARIN processed information locally using embedded AI models before sending summarized insights to central servers.
+
+The primary software
+
+
+[Source 3]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+[Source 4]
+elemetry to regional processing hubs every fifteen minutes.
+
+In 2018, Ashford led development of the Adaptive River Intelligence Network (ARIN). ARIN integrated data from more than 18,500
+
+
+[Source 5]
+improve prediction accuracy without exchanging raw environmental data.
+
+In 2020, Blue Horizon Analytics partnered with the fictional National Freshwater Research Alliance (NFRA) to deploy ARIN
+
+
+
+
+Question:
+
+What are the four layers of the ARIN architecture?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "The primary software architecture behind ARIN consisted of four layers: Sensor Collection Layer, Edge Processing Layer, Regional Aggregation Layer, and Central Prediction.",
+    "citations": [
+        "Source 1"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='The primary software architecture behind ARIN consisted of four layers: Sensor Collection Layer, Edge Processing Layer, Regional Aggregation Layer, and Central Prediction.' citations=['Source 1'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: What engineering principles does Ashford emphasize?
+==========================================
+What engineering principles does Ashford emphasize?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000267 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+s should optimize not only for predictive accuracy but also for environmental efficiency and long-term maintainability.
+
+Ashford frequently emphasized four engineering principles throughout her
+
+
+[Source 2]
+of research, Ashford authored the book Engineering Intelligence for a Sustainable Planet, published in 2023. The book argued that future AI systems should optimize not only for predictive accuracy
+
+
+[Source 3]
+e. The award committee specifically recognized her work in reducing energy consumption across large-scale environmental monitoring systems.
+
+Outside of research, Ashford authored the book Engineering
+
+
+[Source 4]
+t the fictional Westbridge Institute of Technology (WIT) to study Computer Engineering.
+
+During her undergraduate studies, Ashford participated in a university research initiative called Project
+
+
+[Source 5]
+nitoring systems while improving anomaly detection accuracy from 89% to 96%.
+
+Ashford published numerous research papers throughout her career. Her most cited publication was "Federated Environmental
+
+
+
+
+Question:
+
+What engineering principles does Ashford emphasize?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: Which project came first: RiverSense or Project Atlas?
+==========================================
+Which project came first: RiverSense or Project Atlas?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000280 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+s drones during floods and earthquakes. Atlas used reinforcement learning to continuously optimize drone flight paths while prioritizing areas with the highest estimated humanitarian impact.
+
+Project
+
+
+[Source 2]
+he highest estimated humanitarian impact.
+
+Project Atlas consisted of three major components:
+
+Pathfinder (route optimization)
+Sentinel (hazard detection)
+Beacon (emergency communications)
+
+The
+
+
+[Source 3]
+d environmental monitoring. In 2021 she introduced Project Atlas, an AI-assisted disaster response platform capable of coordinating autonomous drones during floods and earthquakes. Atlas used
+
+
+[Source 4]
+ithin three years the company expanded to over 120 employees.
+
+One of Blue Horizon Analytics' most notable products was RiverSense, a network of autonomous floating sensor buoys capable of monitoring
+
+
+[Source 5]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+
+
+Question:
+
+Which project came first: RiverSense or Project Atlas?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: Which publication introduced federated learning?
+==========================================
+Which publication introduced federated learning?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000270 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+e Computing in 2019. The paper introduced adaptive federated learning techniques that allowed geographically separated sensor clusters to improve prediction accuracy without exchanging raw
+
+
+[Source 2]
+ost cited publication was "Federated Environmental Intelligence Using Distributed Sensor Meshes," published in the fictional Journal of Sustainable Computing in 2019. The paper introduced adaptive
+
+
+[Source 3]
+nitoring systems while improving anomaly detection accuracy from 89% to 96%.
+
+Ashford published numerous research papers throughout her career. Her most cited publication was "Federated Environmental
+
+
+[Source 4]
+ed "Adaptive Learning in Distributed Environmental Sensor Networks," proposed algorithms capable of learning seasonal environmental patterns without requiring centralized data collection.
+
+In 2015,
+
+
+[Source 5]
+ayer
+Regional Aggregation Layer
+Central Prediction Engine
+
+The system reduced bandwidth consumption by approximately 82% compared to previous monitoring systems while improving anomaly detection
+
+
+
+
+Question:
+
+Which publication introduced federated learning?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "The publication that introduced adaptive federated learning techniques was \"Federated Environmental Intelligence Using Distributed Sensor Meshes,\" published in the fictional Journal of Sustainable Computing in 2019. [Source 1, Source 2]",
+    "citations": [
+        "Source 1",
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='The publication that introduced adaptive federated learning techniques was "Federated Environmental Intelligence Using Distributed Sensor Meshes," published in the fictional Journal of Sustainable Computing in 2019. [Source 1, Source 2]' citations=['Source 1', 'Source 2'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: Which research project focused on marine ecosystems?
+==========================================
+Which research project focused on marine ecosystems?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000324 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+During its first field season, Nautilus-X surveyed over 2,400 square kilometers of coastal ecosystems.
+
+Ashford's current research focuses on integrating large language models with scientific
+
+
+[Source 2]
+atory in the fictional city of Silver Bay, British Columbia. The facility focused on underwater robotics and marine ecosystem monitoring.
+
+The laboratory developed an autonomous underwater vehicle
+
+
+[Source 3]
+in a university research initiative called Project Firefly, which focused on creating low-power wireless sensor networks for forests vulnerable to wildfires. The project was supervised by Professor
+
+
+[Source 4]
+d environmental monitoring. In 2021 she introduced Project Atlas, an AI-assisted disaster response platform capable of coordinating autonomous drones during floods and earthquakes. Atlas used
+
+
+[Source 5]
+oratory developed an autonomous underwater vehicle known as Nautilus-X, capable of mapping coral reef health using hyperspectral imaging and sonar. During its first field season, Nautilus-X surveyed
+
+
+
+
+Question:
+
+Which research project focused on marine ecosystems?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
+
+==========================================
+Question: How many sensors were deployed by ARIN?
+==========================================
+How many sensors were deployed by ARIN?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000280 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+[Source 2]
+insights to central servers.
+
+The primary software architecture behind ARIN consisted of four layers:
+
+Sensor Collection Layer
+Edge Processing Layer
+Regional Aggregation Layer
+Central Prediction
+
+
+[Source 3]
+tead of transmitting raw sensor data to the cloud, ARIN processed information locally using embedded AI models before sending summarized insights to central servers.
+
+The primary software
+
+
+[Source 4]
+elemetry to regional processing hubs every fifteen minutes.
+
+In 2018, Ashford led development of the Adaptive River Intelligence Network (ARIN). ARIN integrated data from more than 18,500
+
+
+[Source 5]
+Freshwater Research Alliance (NFRA) to deploy ARIN throughout the Great Timber Watershed. During the first year of deployment, the system successfully predicted three significant algae blooms
+
+
+
+
+Question:
+
+How many sensors were deployed by ARIN?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "ARIN integrated data from more than 18,500 environmental sensors. [Source 1, Source 4]",
+    "citations": [
+        "Source 1",
+        "Source 4"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='ARIN integrated data from more than 18,500 environmental sensors. [Source 1, Source 4]' citations=['Source 1', 'Source 4'] confidence=1.0 safety_flags=[]
+
+==========================================
+Question: How many river systems were monitored?
+==========================================
+How many river systems were monitored?
+Loaded 58 vectors
+Embedding dimension: 3072
+start search
+Elapsed search time: 0.000275 seconds
+
+
+You are a helpful assistant.
+
+Answer the user's question ONLY using the provided context.
+
+If the answer is not contained in the context,
+say "I don't have enough information."
+
+Always cite sources using [Source X] format.
+
+Return ONLY JSON.
+
+{
+    "answer":"",
+    "citations":[],
+    "confidence":0,
+    "safety_flags":[]
+}
+Context:
+
+
+[Source 1]
+elemetry to regional processing hubs every fifteen minutes.
+
+In 2018, Ashford led development of the Adaptive River Intelligence Network (ARIN). ARIN integrated data from more than 18,500
+
+
+[Source 2]
+(ARIN). ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. Instead of transmitting raw sensor data to the cloud,
+
+
+[Source 3]
+Freshwater Research Alliance (NFRA) to deploy ARIN throughout the Great Timber Watershed. During the first year of deployment, the system successfully predicted three significant algae blooms
+
+
+[Source 4]
+elligence Network (ARIN), a distributed artificial intelligence system designed to monitor freshwater ecosystems in real time. Although she has received international recognition for her work, Dr.
+
+
+[Source 5]
+ayer
+Regional Aggregation Layer
+Central Prediction Engine
+
+The system reduced bandwidth consumption by approximately 82% compared to previous monitoring systems while improving anomaly detection
+
+
+
+
+Question:
+
+How many river systems were monitored?
+
+
+Answer:
+
+
+Not yet format validated
+```json
+{
+    "answer": "ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. [Source 2]",
+    "citations": [
+        "Source 2"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer='ARIN integrated data from more than 18,500 environmental sensors deployed across eleven fictional river systems throughout North America. [Source 2]' citations=['Source 2'] confidence=1.0 safety_flags=[]
