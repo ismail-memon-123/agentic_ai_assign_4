@@ -2,20 +2,134 @@
 
 ## Overview
 
-This project implements a Retrieval-Augmented Generation (RAG) system using Google's Gemini models.
+This project implements a production-style Retrieval-Augmented Generation (RAG) system using Google's Gemini API and FAISS.
 
-The pipeline:
+The application ingests a collection of documents, generates semantic embeddings using Gemini, stores them in a FAISS vector database, retrieves the most relevant document chunks for a user query, and generates grounded responses using Gemini.
 
-1. Reads documents from a corpus directory
-2. Splits documents into overlapping chunks
-3. Generates embeddings using Gemini
-4. Stores embeddings in a NumPy vector index
-5. Embeds user queries
-6. Performs cosine similarity search
-7. Retrieves the top-k most relevant chunks
-8. Builds a grounded prompt
-9. Generates an answer using Gemini
-10. Displays the answer with citations
+The project also implements several production-oriented features including:
+
+- FAISS vector indexing
+- Gemini embeddings
+- Retrieval-Augmented Generation (RAG)
+- Gemini Safety Guardrails
+- Prompt-response caching
+- Structured JSON output validation
+- Timestamped logging
+- Source citations
+
+---
+
+# Assignment Features
+
+This implementation satisfies the following production RAG requirements.
+
+## Retrieval
+
+- Gemini embedding model
+- FAISS IndexFlatIP vector database
+- Cosine similarity search
+- Top-K document retrieval
+
+## Generation
+
+- Gemini Large Language Model
+- Grounded prompt construction
+- Source citations
+- Structured JSON responses
+
+## Safety
+
+- Gemini Safety Settings
+- Harmful content filtering
+- Safety ratings returned from Gemini
+
+## Caching
+
+- Prompt-response cache
+- Stores the most recent 10 prompts
+- Tracks cache hits
+- Automatically evicts the least-used prompt
+- Timestamped cache logs
+
+## Validation
+
+All responses are validated using Pydantic before being returned.
+
+## Logging
+
+Timestamped logs are generated for
+
+- Embedding requests
+- LLM requests
+- Cache hits
+- Cache misses
+- Cache eviction
+- Gemini safety information
+- API failures
+
+---
+
+# System Architecture
+
+```
+                    DOCUMENT INGESTION
+
+        Documents
+             │
+             ▼
+      Document Loader
+             │
+             ▼
+      Document Chunker
+             │
+             ▼
+     Gemini Embeddings
+             │
+             ▼
+     FAISS IndexFlatIP
+             │
+             ▼
+      Save index.faiss
+
+====================================================
+
+                    QUERY PIPELINE
+
+        User Question
+             │
+             ▼
+       Prompt Cache
+        │        │
+        │        │
+   Cache Hit   Cache Miss
+        │        │
+        ▼        ▼
+ Return Answer  Gemini Embedding
+                    │
+                    ▼
+              FAISS Search
+                    │
+                    ▼
+             Top-K Chunks
+                    │
+                    ▼
+            Prompt Builder
+                    │
+                    ▼
+        Gemini Safety Settings
+                    │
+                    ▼
+          Gemini Generation
+                    │
+                    ▼
+         Pydantic Validation
+                    │
+                    ▼
+           Cache Response
+                    │
+                    ▼
+             Final Response
+```
 
 ---
 
@@ -23,21 +137,29 @@ The pipeline:
 
 ```
 project/
+
 │
 ├── corpus/
-│   ├── doc1.txt
-│   ├── doc2.md
-│   └── ...
+│     ├── document1.txt
+│     ├── document2.md
 │
 ├── index/
-│   ├── vectors.npy
-│   ├── metadata.json
-│   └── config.json
+│     ├── index.faiss
+│     └── metadata.json
+│
+├── cache/
+│     └── prompt_cache.json
+│
+├── logs/
+│     ├── gemini.log
+│     └── prompt_cache.log
 │
 ├── chunker.py
 ├── embeddings.py
 ├── ingest.py
 ├── index_utils.py
+├── prompt_cache.py
+├── validator.py
 ├── requirements.txt
 └── README.md
 ```
@@ -49,17 +171,19 @@ project/
 - Python 3.10+
 - Google Gemini API Key
 
-Install dependencies:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Example requirements:
+Example requirements
 
 ```
 google-genai
+faiss-cpu
 numpy
+pydantic
 tqdm
 ```
 
@@ -67,17 +191,17 @@ tqdm
 
 # Configure Gemini
 
-Create an API key:
+Create an API Key
 
 https://aistudio.google.com/app/apikey
 
-Linux/macOS:
+Linux/macOS
 
 ```bash
-export GEMINI_API_KEY="YOUR_API_KEY"
+export GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-Windows:
+Windows
 
 ```cmd
 set GEMINI_API_KEY=YOUR_API_KEY
@@ -85,20 +209,24 @@ set GEMINI_API_KEY=YOUR_API_KEY
 
 ---
 
-# Creating the Index
+# Supported Documents
 
-Place documents inside
+The ingestion pipeline currently supports
+
+- TXT
+- Markdown
+
+Simply place the documents inside
 
 ```
 corpus/
 ```
 
-Supported files:
+---
 
-- .txt
-- .md
+# Building the Index
 
-Run:
+Generate embeddings and build the FAISS index.
 
 ```bash
 python ingest.py \
@@ -108,115 +236,165 @@ python ingest.py \
     --overlap 50
 ```
 
-This generates
+The ingestion process
+
+1. Reads every document
+2. Splits the document into overlapping chunks
+3. Generates Gemini embeddings
+4. Normalizes embeddings
+5. Builds a FAISS IndexFlatIP index
+6. Stores document metadata
+
+Output
 
 ```
 index/
-    vectors.npy
+
+    index.faiss
+
     metadata.json
-    config.json
 ```
 
 ---
 
 # Querying
 
-Ask a question:
+Run
 
 ```bash
 python index_utils.py
-When invoked ask the question
 ```
 
-# How the Pipeline Works
+The application prompts for a question
 
 ```
-Documents
-      │
-      ▼
-Chunk Documents
-      │
-      ▼
-Generate Gemini Embeddings
-      │
-      ▼
-Save NumPy Index
+Question:
 
-===============================
-
-User Question
-      │
-      ▼
-Embed Query
-      │
-      ▼
-Cosine Similarity
-      │
-      ▼
-Top-K Chunks
-      │
-      ▼
-Prompt Builder
-      │
-      ▼
-Gemini
-      │
-      ▼
-Final Answer
+Who founded Blue Horizon Analytics?
 ```
+
+The pipeline then
+
+1. Checks the prompt cache
+2. Generates a Gemini embedding
+3. Searches FAISS
+4. Retrieves the Top-K chunks
+5. Builds a grounded prompt
+6. Sends the prompt through Gemini Safety
+7. Generates an answer
+8. Validates the JSON response
+9. Stores the result in the prompt cache
+10. Returns the answer
 
 ---
 
-# Files
+# Gemini Safety Guardrails
+
+All prompts are submitted using Gemini Safety Settings.
+
+The following safety categories are enabled
+
+- Harassment
+- Hate Speech
+- Dangerous Content
+- Sexually Explicit Content
+
+Safety ratings returned by Gemini are recorded in the application logs.
+
+---
+
+# JSON Validation
+
+Every Gemini response is validated using Pydantic.
+
+Expected response format
+
+```json
+{
+    "answer": "...",
+    "citations": [
+        "Source 1"
+    ],
+    "confidence": 1,
+    "safety_flags": []
+}
+```
+
+Responses that do not satisfy the schema are rejected before being returned.
+
+---
+
+# Logging
+
+The application maintains timestamped log files.
+
+## Gemini Log
+
+```
+logs/
+
+    gemini.log
+```
+
+Records
+
+- Embedding requests
+- Generation requests
+- Safety ratings
+- API failures
+
+Example
+
+```
+[2026-08-05 19:42:10] Embedding Request
+[2026-08-05 19:42:11] Embedding Success
+[2026-08-05 19:42:12] Generation Request
+[2026-08-05 19:42:13] Generation Success
+```
+
+
+---
+
+# Project Files
 
 ## chunker.py
 
-Responsible for:
+Responsible for
 
-- reading documents
-- cleaning text
-- splitting into overlapping chunks
-
-Returns
-
-```
-[
-    chunk1,
-    chunk2,
-    ...
-]
-```
+- Reading documents
+- Cleaning text
+- Splitting documents into overlapping chunks
 
 ---
 
 ## bedrock_llm.py
 
-Responsible for:
+Responsible for
 
-- connecting to Gemini
-- generating embeddings
-- invoking llm with prompts
+- Connecting to Gemini
+- Generating embeddings
+- Invoking the Gemini LLM
+- Applying Gemini Safety Settings
+- Logging embedding and generation requests
+
+---
 
 ## ingest.py
 
-Creates the vector database.
+Responsible for
 
-Steps
+- Reading documents
+- Chunking documents
+- Generating embeddings
+- Building the FAISS index
+- Saving metadata
 
-1. Read documents
-2. Chunk documents
-3. Generate embeddings
-4. Save vectors
-5. Save metadata
-
-Outputs
+Output
 
 ```
-vectors.npy
+index.faiss
 
 metadata.json
-
-config.json
 ```
 
 ---
@@ -225,33 +403,55 @@ config.json
 
 Responsible for
 
-- loading vectors
-- loading metadata
-- cosine similarity search
-- returning top-k chunks
-- creating full query
-- asking user for question and answering it
-
+- Loading the FAISS index
+- Loading metadata
+- Embedding user questions
+- Performing Top-K similarity search
+- Building the grounded prompt
+- Returning retrieved chunks
+- Deals with building prompt
+- Answers user
 ---
 
 
-# Example
+# Example Workflow
 
-Take a look at the screenshot, I made up a edm dj (slightly changed David Guetta's name and copied a part of an article about him
-with the changed name. When asked about the fake DJ the information from the article is presented and the sources cited).
+1. User asks a question.
+2. The prompt cache is checked.
+3. If the prompt is cached, the stored response is returned.
+4. Otherwise, the question is embedded using Gemini.
+5. FAISS retrieves the Top-K matching chunks.
+6. A grounded prompt is created.
+7. Gemini generates a response using Safety Settings.
+8. The response is validated using Pydantic.
+9. The response is cached.
+10. The final answer and citations are displayed.
 
-I also used chat gpt to generate a fake article about a fake country and asked questions about that.
+---
+
+# Performance
+
+Using FAISS significantly improves retrieval performance compared to manually computing cosine similarity across every embedding.
+
+Prompt caching further reduces latency by avoiding repeated Gemini API requests for frequently asked questions.
+
+Logging and structured validation provide observability and improve system reliability.
+
+---
+
 # Troubleshooting
 
 ## GEMINI_API_KEY not found
 
 Verify
 
+Linux
+
 ```bash
 echo $GEMINI_API_KEY
 ```
 
-or
+Windows
 
 ```cmd
 echo %GEMINI_API_KEY%
@@ -263,9 +463,22 @@ echo %GEMINI_API_KEY%
 
 Possible causes
 
-- Chunk size too large
-- Overlap too small
-- Wrong embedding model
 - Empty corpus
+- Incorrect chunk size
+- Incorrect overlap
+- Index not rebuilt after adding documents
 
 ---
+
+## FAISS Import Error
+
+Install FAISS
+
+```bash
+pip install faiss-cpu
+```
+
+If using Windows, ensure that your Python version is supported by the installed FAISS package.
+
+## Report
+A detailed report is included in the report file. It tests questions.txt and questions_negative.txt
