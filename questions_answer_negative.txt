@@ -224,6 +224,20 @@ Who are Elena Ashford's parents?
 Answer:
 
 
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
 
 ==========================================
 Question: What was her GPA at WIT?
@@ -291,6 +305,20 @@ What was her GPA at WIT?
 Answer:
 
 
+Not yet format validated
+```json
+{
+    "answer": "I don't have enough information.",
+    "citations": [],
+    "confidence": 0,
+    "safety_flags": []
+}
+```
+
+====================
+ANSWER
+====================
+answer="I don't have enough information." citations=[] confidence=0.0 safety_flags=[]
 
 ==========================================
 Question: what is aws
