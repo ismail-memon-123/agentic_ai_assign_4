@@ -204,11 +204,7 @@ corpus/
 Generate embeddings and build the FAISS index.
 
 ```bash
-python ingest.py \
-    --corpus ./corpus \
-    --out ./index \
-    --chunk 200 \
-    --overlap 50
+python ingest.py     --corpus ./corpus     --out ./index3     --chunk 200     --overlap 50     --nlist 4     --pq_m 4 --pq_bits 4
 ```
 
 The ingestion process
@@ -217,7 +213,7 @@ The ingestion process
 2. Splits the document into overlapping chunks
 3. Generates Gemini embeddings
 4. Normalizes embeddings
-5. Builds a FAISS IndexFlatIP index
+5. Builds a FAISS IVF index
 6. Stores document metadata
 
 Output
