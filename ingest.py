@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 ingest.py
 
@@ -52,16 +51,18 @@ def build_index(
     corpus_dir: Path,
     output_dir: Path,
     chunk_size: int,
-    overlap: int
+    overlap: int,
+    nlist: int,
+    pq_m: int,
+    pq_bits: int
 ):
     """
-    Build a FAISS IndexFlatIP index using Gemini embeddings.
+    Build a FAISS IVF-PQ index using Gemini embeddings.
     """
 
     print("=" * 60)
     print("Loading documents...")
     print("=" * 60)
-
     documents = load_documents(corpus_dir)
 
     print(f"Loaded {len(documents)} documents.\n")
@@ -107,7 +108,7 @@ def build_index(
     print()
 
     print("=" * 60)
-    print("Building FAISS Index...")
+    print("Building FAISS IVF-PQ Index...")
     print("=" * 60)
 
     output_dir.mkdir(
@@ -115,19 +116,39 @@ def build_index(
         exist_ok=True
     )
 
-    # Convert to float32 NumPy array
     vectors = np.asarray(
         all_vectors,
         dtype=np.float32
     )
 
-    # Normalize vectors so inner product == cosine similarity
+    # Normalize for cosine similarity
     faiss.normalize_L2(vectors)
 
     dimension = vectors.shape[1]
 
-    # Exact cosine similarity index
-    index = faiss.IndexFlatIP(dimension)
+    if dimension % pq_m != 0:
+        raise ValueError(
+            f"Embedding dimension ({dimension}) must be divisible by pq_m ({pq_m})"
+        )
+
+    if len(vectors) < nlist:
+        raise ValueError(
+            f"Corpus only contains {len(vectors)} vectors. "
+            f"Reduce nlist below {len(vectors)}."
+        )
+
+    quantizer = faiss.IndexFlatIP(dimension)
+
+    index = faiss.IndexIVFPQ(
+        quantizer,
+        dimension,
+        nlist,
+        pq_m,
+        pq_bits
+    )
+
+    print("Training IVF-PQ index...")
+    index.train(vectors)
 
     print("Adding vectors...")
     index.add(vectors)
@@ -144,6 +165,7 @@ def build_index(
         "w",
         encoding="utf-8"
     ) as f:
+
         json.dump(
             metadata,
             f,
@@ -152,13 +174,17 @@ def build_index(
         )
 
     print()
+
     print("Done.\n")
 
     print(f"Documents : {len(documents)}")
     print(f"Chunks    : {total_chunks}")
     print(f"Vectors   : {index.ntotal}")
     print(f"Dimension : {dimension}")
-    print(f"Index Type: IndexFlatIP")
+    print(f"Index Type: IVF-PQ")
+    print(f"nlist     : {nlist}")
+    print(f"PQ m      : {pq_m}")
+    print(f"PQ bits   : {pq_bits}")
     print(f"Saved to  : {output_dir}")
 
 def main():
@@ -190,19 +216,27 @@ def main():
         default=150,
         help="Chunk overlap"
     )
-    '''
+
     parser.add_argument(
         "--nlist",
         type=int,
+        default=16,
+        help="Number of IVF coarse clusters"
     )
+
     parser.add_argument(
         "--pq_m",
         type=int,
+        default=8,
+        help="Number of PQ subvectors"
     )
+
     parser.add_argument(
         "--pq_bits",
         type=int,
-    )'''
+        default=8,
+        help="Bits per PQ code"
+    )
 
     args = parser.parse_args()
 
@@ -210,12 +244,12 @@ def main():
         corpus_dir=Path(args.corpus),
         output_dir=Path(args.out),
         chunk_size=args.chunk,
-        overlap=args.overlap
-        #nlist=args.nlist,
-        #pq_m=args.pq_m,
-        #pq_bits=args.pq_bits
+        overlap=args.overlap,
+        nlist=args.nlist,
+        pq_m=args.pq_m,
+        pq_bits=args.pq_bits
     )
 
-
 if __name__ == "__main__":
+    print("Entering main()")
     main()
